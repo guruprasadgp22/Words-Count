@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: darkgray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    } to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.card h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #3333;
+}
+
+textarea {
+    resize: none;
+    width: 95%;
+    height: 150px;
+    padding: 10px;
+    border:  2px solid #000;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.calculation {
+    margin-top: 20px;
+}
+
+.count {
+    margin-bottom: 10px;
+    color: #5555;
+    font-size: 16px;
+}
+
+.count span {
+    font-weight: bold;
+    color: #023abf;
+    margin-left: 5px;
+}
